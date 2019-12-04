@@ -11,13 +11,15 @@
     "type": "git",
     "url": "git+https://github.com/Pierre590/electron.git"
   },
-  "author": "piro",
+  "author": "piro && Q",
   "license": "ISC",
   "bugs": {
     "url": "https://github.com/Pierre590/electron/issues"
   },
   "homepage": "https://github.com/Pierre590/electron#readme",
   "devDependencies": {
-    "electron": "^7.1.3"
-  }
+    "electron": "^7.1.3",
+    "electron-reload": "^1.5.0"
+  },
+  "dependencies": {}
 }

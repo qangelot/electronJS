@@ -1,0 +1,57 @@
+.row {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.btn {
+    border-radius: 100%;
+    flex: 1;
+    margin: 6px;
+    background-color: rgb(120, 110, 110);
+    color: white;
+    height: 80px;
+    font-size: 50px;
+
+}
+
+.screen {
+    border-radius: 30px;
+    background-color: aliceblue;
+    color: black;
+    height:100px;
+    border:1px solid #000;
+    justify-content: flex-end;
+    align-items: flex-end;
+    font-size: 100px;
+}
+
+.test {
+    flex: 1;
+
+}
+
+body {
+    background-image:url('bleu.jpg');
+
+}
+
+.btnd, .btnm, .btnp {
+    border-radius: 100%;
+    flex: 1;
+    margin: 6px;
+    color: white;
+    height: 80px;
+    font-size: 50px;
+    background-color: brown
+}
+
+.btne {
+    border-radius: 100%;
+    flex: 1;
+    margin: 6px;
+    color: white;
+    height: 80px;
+    font-size: 50px;
+    background-color: rgb(55, 117, 12);
+}
