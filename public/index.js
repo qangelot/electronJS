@@ -1,10 +1,24 @@
+//verifie si la valeur est un symbole//
+function isSymbol(value) {
+    return ['/', '*', '-', '+'].indexOf (value) !== -1
+}
+
+function getLastChar() {
+    return screen.innerHTML.substr (-1)
+}
+
 function addToScreen (value) {
     if(!isStarted) {
-        screen.innerHTML = null
+        if (!isSymbol(value))
+            screen.innerHTML = null   //retour au zero
         isStarted = true
     }
-    screen.innerHTML += value
+    if (isSymbol(getLastChar())) {
+        deleteToScreen()
+    }
+    screen.innerHTML += value   //valeur tapé dans l'écran//
 }
+
 function deleteToScreen (lenght = -1) {
     screen.innerHTML = screen.innerHTML.slice(0, lenght)
     if (!screen.innerHTML) {
@@ -20,7 +34,7 @@ let isStarted = false
 
 buttons.forEach(element => {
     element.addEventListener ('click', function () {
-
+        console.log(getLastChar())
         let value = this.textContent
 
         if (value === 'ce') {
@@ -28,5 +42,6 @@ buttons.forEach(element => {
         } else {
             addToScreen (value)
         }
+
     })
 })
