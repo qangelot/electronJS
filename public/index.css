@@ -5,6 +5,7 @@
 }
 
 .btn {
+    cursor: pointer;
     border-radius: 100%;
     flex: 1;
     margin: 6px;
