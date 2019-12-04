@@ -1,0 +1,23 @@
+{
+  "name": "calculatrice-electron",
+  "version": "1.0.0",
+  "description": "calculatrice de la mort qui tue !",
+  "main": "index.js",
+  "scripts": {
+    "start": "electron .",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Pierre590/electron.git"
+  },
+  "author": "piro",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Pierre590/electron/issues"
+  },
+  "homepage": "https://github.com/Pierre590/electron#readme",
+  "devDependencies": {
+    "electron": "^7.1.3"
+  }
+}
