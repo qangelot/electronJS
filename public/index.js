@@ -13,7 +13,7 @@ function addToScreen (value) {
             screen.innerHTML = null   //retour au zero
         isStarted = true
     }
-    if (isSymbol(getLastChar())) {
+    if (isSymbol(getLastChar()) && isSymbol(value)) {
         deleteToScreen()
     }
     screen.innerHTML += value   //valeur tapé dans l'écran//
@@ -25,6 +25,7 @@ function deleteToScreen (lenght = -1) {
         screen.innerHTML = 0
         isStarted = false
     }
+
 }
 
 const screen = document.getElementById ('screen')
@@ -34,11 +35,13 @@ let isStarted = false
 
 buttons.forEach(element => {
     element.addEventListener ('click', function () {
-        console.log(getLastChar())
         let value = this.textContent
-
         if (value === 'ce') {
             deleteToScreen()
+        } else if (value === '=') {
+
+            const resultat = eval(screen.innerHTML)
+            screen.innerHTML = resultat
         } else {
             addToScreen (value)
         }
